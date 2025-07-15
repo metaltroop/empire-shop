@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef, TouchEvent, MouseEvent, Suspense } from 'react'
+import { useState, useRef, TouchEvent, MouseEvent } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -35,41 +35,55 @@ const carouselData = [
 	},
 ]
 
-function CarouselComponent() {
+export default function HomeCarousel() {
 	const [currentSlide, setCurrentSlide] = useState(0)
-	const touchStart = useRef(0)
-	const touchEnd = useRef(0)
+	const [touchStart, setTouchStart] = useState(0)
+	const [dragging, setDragging] = useState(false)
+	const [dragOffset, setDragOffset] = useState(0)
+	const slideRef = useRef<HTMLDivElement>(null)
 
 	const handleTouchStart = (e: TouchEvent) => {
-		touchStart.current = e.touches[0].clientX
+		setTouchStart(e.touches[0].clientX)
+		setDragging(true)
 	}
 
 	const handleMouseDown = (e: MouseEvent) => {
-		touchStart.current = e.clientX
+		setTouchStart(e.clientX)
+		setDragging(true)
 	}
 
 	const handleTouchMove = (e: TouchEvent) => {
-		if (!touchStart.current) return
-		touchEnd.current = e.touches[0].clientX
+		if (!dragging) return
+		const touchEnd = e.touches[0].clientX
+		const diff = touchStart - touchEnd
+		// Limit the drag offset to prevent overscrolling
+		const maxDrag = window.innerWidth
+		const limitedDiff = Math.max(Math.min(diff, maxDrag), -maxDrag)
+		setDragOffset(limitedDiff)
 	}
 
 	const handleMouseMove = (e: MouseEvent) => {
-		if (!touchStart.current) return
-		touchEnd.current = e.clientX
+		if (!dragging) return
+		const touchEnd = e.clientX
+		const diff = touchStart - touchEnd
+		// Limit the drag offset to prevent overscrolling
+		const maxDrag = window.innerWidth
+		const limitedDiff = Math.max(Math.min(diff, maxDrag), -maxDrag)
+		setDragOffset(limitedDiff)
 	}
 
 	const handleSwipe = () => {
 		const threshold = window.innerWidth * 0.2 // 20% of screen width
-		const diff = touchStart.current - touchEnd.current
-		if (Math.abs(diff) > threshold) {
-			if (diff > 0) {
+		if (Math.abs(dragOffset) > threshold) {
+			if (dragOffset > 0) {
 				nextSlide()
 			} else {
 				prevSlide()
 			}
 		}
-		touchStart.current = 0
-		touchEnd.current = 0
+		// Add smooth return animation
+		setDragOffset(0)
+		setDragging(false)
 	}
 
 	const handleDragEnd = () => {
@@ -86,63 +100,108 @@ function CarouselComponent() {
 
 	return (
 		<div className="relative overflow-hidden rounded-lg">
-			<div 
-				className="flex transition-transform duration-300 ease-out"
-				style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+			<div
+				ref={slideRef}
+				className="relative flex transition-transform duration-500 ease-out"
+				style={{
+					transform: `translateX(calc(${-currentSlide * 100}% - ${
+						dragging ? dragOffset / 2 : 0
+					}px))`,
+					width: `${carouselData.length * 100}%`,
+					touchAction: 'pan-y pinch-zoom',
+				}}
+				onTouchStart={handleTouchStart}
+				onTouchMove={handleTouchMove}
+				onTouchEnd={handleDragEnd}
+				onMouseDown={handleMouseDown}
+				onMouseMove={handleMouseMove}
+				onMouseUp={handleDragEnd}
+				onMouseLeave={handleDragEnd}
 			>
 				{carouselData.map((slide, index) => (
-					<div key={slide.id} className="relative w-full h-64 flex-shrink-0">
-						<Image
+					<div
+						key={slide.id}
+						className="relative w-full h-64 flex-shrink-0 rounded-lg overflow-hidden"
+					>
+						<Image 
 							src={slide.image}
 							alt={slide.mainText}
 							fill
-							priority={index === 0}
-							sizes="(max-width: 768px) 100vw, 50vw"
 							className="object-cover"
-							loading={index === 0 ? 'eager' : 'lazy'}
+							sizes="(max-width: 768px) 100vw, 50vw"
+							priority={index === 0} // Add priority to first slide
+							placeholder="blur"
+							blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRg..." // Add base64 blur placeholder
 						/>
-						<div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-						<div className="absolute bottom-0 left-0 p-4 text-white">
-							<h2 className="text-2xl font-bold">{slide.mainText}</h2>
-							<p className="text-sm opacity-90">{slide.subText}</p>
+						<div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+
+						{/* Content */}
+						<div className="absolute bottom-4 left-4 max-w-xl z-10">
+							<h2 className="text-2xl font-bold text-white">{slide.mainText}</h2>
+							<p className="text-white mt-2">{slide.subText}</p>
 							<Link
 								href={slide.link}
-								className={`
-									inline-block px-4 py-2 mt-2 rounded-lg
-									bg-gradient-to-r ${slide.buttonTheme}
-									text-white font-medium
-									transition-transform hover:scale-105
-								`}
+								className={`mt-3 inline-block px-4 py-2 rounded-md text-sm text-white font-medium
+    bg-gradient-to-r ${slide.buttonTheme}
+    transform hover:scale-102
+    transition-all duration-200
+    border border-white/10
+    shadow-md shadow-black/10
+    backdrop-blur-sm
+    relative
+    overflow-hidden
+    group`}
 							>
-								{slide.buttonText}
+								<span className="relative z-10 flex items-center gap-1.5">
+									{slide.buttonText}
+									<svg
+										className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5"
+										fill="none"
+										stroke="currentColor"
+										viewBox="0 0 24 24"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth={2}
+											d="M9 5l7 7-7 7"
+										/>
+									</svg>
+								</span>
+								<div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 
+    translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
 							</Link>
 						</div>
 					</div>
 				))}
 			</div>
-			
-			{/* Navigation dots */}
-			<div className="absolute bottom-4 right-4 flex gap-2">
+
+			{/* Navigation arrows */}
+			<button
+				onClick={prevSlide}
+				className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/30 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
+			>
+				&#8249;
+			</button>
+			<button
+				onClick={nextSlide}
+				className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/30 text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity z-10"
+			>
+				&#8250;
+			</button>
+
+			{/* Dots */}
+			<div className="absolute bottom-4 right-4 flex space-x-2 z-10">
 				{carouselData.map((_, index) => (
 					<button
 						key={index}
+						onClick={() => setCurrentSlide(index)}
 						className={`w-2 h-2 rounded-full transition-colors ${
 							index === currentSlide ? 'bg-white' : 'bg-white/50'
 						}`}
-						onClick={() => setCurrentSlide(index)}
 					/>
 				))}
 			</div>
 		</div>
-	)
-}
-
-export default function HomeCarousel() {
-	return (
-		<Suspense fallback={
-			<div className="h-64 animate-pulse bg-gray-200 rounded-lg" />
-		}>
-			<CarouselComponent />
-		</Suspense>
 	)
 }
