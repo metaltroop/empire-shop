@@ -10,6 +10,32 @@ export default function BottomNav() {
   const pathname = usePathname()
   const router = useRouter()
 
+  // Handle search overlay state with history
+  useEffect(() => {
+    const handlePopState = () => {
+      if (isSearchOpen) {
+        setIsSearchOpen(false)
+      }
+    }
+
+    window.addEventListener('popstate', handlePopState)
+    return () => window.removeEventListener('popstate', handlePopState)
+  }, [isSearchOpen])
+
+  const handleSearchOpen = () => {
+    setIsSearchOpen(true)
+    // Add a new history entry when opening search
+    history.pushState({ isSearch: true }, '')
+  }
+
+  const handleSearchClose = () => {
+    setIsSearchOpen(false)
+    // Go back when closing search manually
+    if (window.history.state?.isSearch) {
+      window.history.back()
+    }
+  }
+
   // Define navItems with useMemo to prevent recreating on each render
   const navItems = useMemo(() => [
     { label: 'Home', icon: Home, href: '/' },
@@ -18,7 +44,7 @@ export default function BottomNav() {
       label: 'Search', 
       icon: Search, 
       href: '#',
-      onClick: () => setIsSearchOpen(true) 
+      onClick: handleSearchOpen
     },
     { label: 'Cart', icon: ShoppingCart, href: '/cart' },
     { label: 'Profile', icon: User, href: '/profile' },
@@ -94,10 +120,10 @@ export default function BottomNav() {
     <>
       <SearchOverlay 
         isOpen={isSearchOpen} 
-        onClose={() => setIsSearchOpen(false)} 
+        onClose={handleSearchClose}
       />
       
-      <nav className="fixed bottom-0 w-full bg-white border-t border-gray-200 shadow-lg z-50">
+      <nav className="fixed bottom-0 w-full bg-white border-t border-gray-200 shadow-lg z-50 rounded-t-xl">
         <div className="max-w-screen-xl mx-auto">
           <div className="flex justify-around items-center py-2">
             {navItems.map(renderNavItem)}

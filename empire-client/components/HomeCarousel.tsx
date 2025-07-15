@@ -1,5 +1,5 @@
 'use client'
-import { useState, useRef, TouchEvent, MouseEvent } from 'react'
+import { useState, useRef, TouchEvent, MouseEvent, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -9,7 +9,7 @@ const carouselData = [
 		image: '/custompcimg.webp',
 		mainText: 'Custom PC Builder',
 		subText: 'Start your custom PC build journey with us',
-		link: '/custom-pc',
+		link: '/PartPicker',
 		buttonText: 'Start Building',
 		buttonTheme:
 			'from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900',
@@ -39,17 +39,48 @@ export default function HomeCarousel() {
 	const [currentSlide, setCurrentSlide] = useState(0)
 	const [touchStart, setTouchStart] = useState(0)
 	const [dragging, setDragging] = useState(false)
-	const [dragOffset, setDragOffset] = useState(0)
-	const slideRef = useRef<HTMLDivElement>(null)
+	const [dragOffset, setDragOffset] = useState(0)  
+	const [isPaused, setIsPaused] = useState(false)
+  const slideRef = useRef<HTMLDivElement>(null)
+  const autoPlayRef = useRef<NodeJS.Timeout | undefined>(undefined)
+
+	const nextSlide = useCallback(() => {
+		setCurrentSlide((prev) => (prev + 1) % carouselData.length)
+	}, [])
+
+	const prevSlide = () => {
+		setCurrentSlide((prev) => (prev - 1 + carouselData.length) % carouselData.length)
+	}
+
+	// Auto-play functionality
+	useEffect(() => {
+		const startAutoPlay = () => {
+			autoPlayRef.current = setInterval(() => {
+				if (!isPaused) {
+					nextSlide()
+				}
+			}, 2000)
+		}
+
+		startAutoPlay()
+
+		return () => {
+			if (autoPlayRef.current) {
+				clearInterval(autoPlayRef.current)
+			}
+		}
+	}, [isPaused, nextSlide])
 
 	const handleTouchStart = (e: TouchEvent) => {
 		setTouchStart(e.touches[0].clientX)
 		setDragging(true)
+		setIsPaused(true) // Pause auto-play on interaction
 	}
 
 	const handleMouseDown = (e: MouseEvent) => {
 		setTouchStart(e.clientX)
 		setDragging(true)
+		setIsPaused(true) // Pause auto-play on interaction
 	}
 
 	const handleTouchMove = (e: TouchEvent) => {
@@ -84,22 +115,29 @@ export default function HomeCarousel() {
 		// Add smooth return animation
 		setDragOffset(0)
 		setDragging(false)
+		setIsPaused(false) // Resume auto-play after interaction
 	}
 
 	const handleDragEnd = () => {
 		handleSwipe()
 	}
 
-	const nextSlide = () => {
-		setCurrentSlide((prev) => (prev + 1) % carouselData.length)
+	// Mouse enter/leave handlers for pause/resume
+	const handleMouseEnter = () => {
+		setIsPaused(true)
 	}
 
-	const prevSlide = () => {
-		setCurrentSlide((prev) => (prev - 1 + carouselData.length) % carouselData.length)
+	const handleMouseLeave = () => {
+		handleDragEnd()
+		setIsPaused(false)
 	}
 
 	return (
-		<div className="relative overflow-hidden rounded-lg">
+		<div 
+			className="relative overflow-hidden rounded-lg"
+			onMouseEnter={handleMouseEnter}
+			onMouseLeave={handleMouseLeave}
+		>
 			<div
 				ref={slideRef}
 				className="relative flex transition-transform duration-500 ease-out"
@@ -116,7 +154,6 @@ export default function HomeCarousel() {
 				onMouseDown={handleMouseDown}
 				onMouseMove={handleMouseMove}
 				onMouseUp={handleDragEnd}
-				onMouseLeave={handleDragEnd}
 			>
 				{carouselData.map((slide, index) => (
 					<div
