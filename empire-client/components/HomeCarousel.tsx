@@ -1,3 +1,4 @@
+// empire-client/components/HomeCarousel.tsx
 'use client'
 import { useState, useRef, TouchEvent, MouseEvent, useEffect, useCallback } from 'react'
 import Link from 'next/link'

@@ -1,3 +1,4 @@
+// empire-client/components/ServicesSection.tsx
 import { lazy, Suspense } from 'react'
 import Link from 'next/link'
 

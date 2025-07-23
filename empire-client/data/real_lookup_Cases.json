@@ -1,0 +1,46 @@
+[
+  {
+    "prodID": "PROD017",
+    "formFactor": "Mid Tower",
+    "maxGpuLengthmm": 381,
+    "maxCoolerHeightMm": 165,
+    "supportedPsuTypes": "ATX",
+    "driveBays25": 2,
+    "driveBays35": 2,
+    "hasRGB": true,
+    "hasGlassPanel": true
+  },
+  {
+    "prodID": "PROD018",
+    "formFactor": "Mid Tower",
+    "maxGpuLengthmm": 410,
+    "maxCoolerHeightMm": 166,
+    "supportedPsuTypes": "ATX",
+    "driveBays25": 2,
+    "driveBays35": 2,
+    "hasRGB": false,
+    "hasGlassPanel": true
+  },
+  {
+    "prodID": "PROD019",
+    "formFactor": "Mid Tower",
+    "maxGpuLengthmm": 360,
+    "maxCoolerHeightMm": 170,
+    "supportedPsuTypes": "ATX",
+    "driveBays25": 2,
+    "driveBays35": 2,
+    "hasRGB": true,
+    "hasGlassPanel": true
+  },
+  {
+    "prodID": "PROD020",
+    "formFactor": "Mid Tower",
+    "maxGpuLengthmm": 355,
+    "maxCoolerHeightMm": 160,
+    "supportedPsuTypes": "ATX",
+    "driveBays25": 2,
+    "driveBays35": 2,
+    "hasRGB": false,
+    "hasGlassPanel": false
+  }
+]

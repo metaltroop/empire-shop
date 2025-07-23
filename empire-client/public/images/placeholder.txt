@@ -1,0 +1,18 @@
+This directory contains placeholder images for the Empire Infotech e-commerce platform.
+
+The following image files should be placed here:
+- inteli5.jpg
+- AMD_R9.jpg
+- rtx_3060ti.jpg
+- rx6700.jpg
+- aorusMB.jpg
+- RM750x.jpg
+- CMMWE550.jpg
+- nzxtcase.jpg
+- SSD.jpg
+- aircooler.jpg
+- GPU.jpg
+- psu.jpg
+- motherboard.jpg
+
+These images are referenced in the product data and used throughout the application.

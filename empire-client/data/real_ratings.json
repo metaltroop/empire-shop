@@ -1,0 +1,298 @@
+[
+  {
+    "id": "RATING001",
+    "prodID": "PROD001",
+    "userID": "USER001",
+    "ratingValue": 5,
+    "reviewText": "Excellent CPU for the price! The i5-12400F delivers great performance for gaming and productivity tasks. Runs cool and efficient. Perfect for mid-range builds.",
+    "timestamps": "2025-07-16T07:15:21.732053"
+  },
+  {
+    "id": "RATING002",
+    "prodID": "PROD002",
+    "userID": "USER002",
+    "ratingValue": 3,
+    "reviewText": "Decent processor but expected better performance for the price. Works well for most games but struggles with newer AAA titles at high settings.",
+    "timestamps": "2025-07-16T07:15:21.732073"
+  },
+  {
+    "id": "RATING003",
+    "prodID": "PROD003",
+    "userID": "USER003",
+    "ratingValue": 4,
+    "reviewText": "Solid high-end CPU with excellent multi-threading performance. Great for content creation and gaming. Runs a bit hot under heavy loads but manageable with good cooling.",
+    "timestamps": "2025-07-16T07:15:21.732095"
+  },
+  {
+    "id": "RATING004",
+    "prodID": "PROD004",
+    "userID": "USER004",
+    "ratingValue": 4,
+    "reviewText": "Amazing gaming performance thanks to the 3D V-Cache technology. Significant improvement in frame rates for gaming. Highly recommended for gaming-focused builds.",
+    "timestamps": "2025-07-16T07:15:21.732116"
+  },
+  {
+    "id": "RATING005",
+    "prodID": "PROD005",
+    "userID": "USER005",
+    "ratingValue": 5,
+    "reviewText": "Outstanding graphics card for 1440p gaming. Excellent ray tracing performance and DLSS support. Great value for money and runs quietly under load.",
+    "timestamps": "2025-07-16T07:15:21.732145"
+  },
+  {
+    "id": "RATING006",
+    "prodID": "PROD006",
+    "userID": "USER006",
+    "ratingValue": 4,
+    "reviewText": "Great AMD card with excellent 1440p performance. Good alternative to NVIDIA with competitive pricing. Ray tracing could be better but overall solid choice.",
+    "timestamps": "2025-07-16T07:15:21.732183"
+  },
+  {
+    "id": "RATING007",
+    "prodID": "PROD007",
+    "userID": "USER007",
+    "ratingValue": 3,
+    "reviewText": "Good performance but overpriced compared to competition. DLSS 3 is nice but not enough to justify the premium. Wait for price drops.",
+    "timestamps": "2025-07-16T07:15:21.732209"
+  },
+  {
+    "id": "RATING008",
+    "prodID": "PROD008",
+    "userID": "USER008",
+    "ratingValue": 5,
+    "reviewText": "Excellent budget-friendly GPU for 1080p gaming. Great performance per dollar and very efficient. Perfect for entry-level gaming builds.",
+    "timestamps": "2025-07-16T07:15:21.732231"
+  },
+  {
+    "id": "RATING009",
+    "prodID": "PROD009",
+    "userID": "USER009",
+    "ratingValue": 5,
+    "reviewText": "Fantastic motherboard with excellent build quality. Great VRM design, plenty of connectivity options, and solid BIOS. Highly recommended for AM4 builds.",
+    "timestamps": "2025-07-16T07:15:21.732253"
+  },
+  {
+    "id": "RATING010",
+    "prodID": "PROD010",
+    "userID": "USER010",
+    "ratingValue": 3,
+    "reviewText": "Basic motherboard that gets the job done. Limited expansion options and average build quality. Fine for budget builds but nothing special.",
+    "timestamps": "2025-07-16T07:15:21.732275"
+  },
+  {
+    "id": "RATING011",
+    "prodID": "PROD011",
+    "userID": "USER011",
+    "ratingValue": 3,
+    "reviewText": "Decent Z790 motherboard but BIOS could be more user-friendly. Good feature set for the price but had some initial stability issues that were resolved with updates.",
+    "timestamps": "2025-07-16T07:15:21.732303"
+  },
+  {
+    "id": "RATING012",
+    "prodID": "PROD012",
+    "userID": "USER012",
+    "ratingValue": 3,
+    "reviewText": "Older chipset but still functional for budget builds. Limited upgrade path and fewer modern features. Good for basic systems but consider newer options.",
+    "timestamps": "2025-07-16T07:15:21.732336"
+  },
+  {
+    "id": "RATING013",
+    "prodID": "PROD013",
+    "userID": "USER013",
+    "ratingValue": 3,
+    "reviewText": "Reliable PSU with good efficiency but the fan can get noisy under load. Modular cables are convenient. Solid choice for mid-range builds.",
+    "timestamps": "2025-07-16T07:15:21.732353"
+  },
+  {
+    "id": "RATING014",
+    "prodID": "PROD014",
+    "userID": "USER014",
+    "ratingValue": 5,
+    "reviewText": "Great budget PSU that delivers reliable power. Non-modular design isn't ideal but acceptable for the price. Perfect for entry-level builds.",
+    "timestamps": "2025-07-16T07:15:21.732365"
+  },
+  {
+    "id": "RATING015",
+    "prodID": "PROD015",
+    "userID": "USER015",
+    "ratingValue": 4,
+    "reviewText": "Excellent PSU from a trusted brand. Very quiet operation and rock-solid reliability. Fully modular design makes cable management easy. Highly recommended.",
+    "timestamps": "2025-07-16T07:15:21.732380"
+  },
+  {
+    "id": "RATING016",
+    "prodID": "PROD016",
+    "userID": "USER016",
+    "ratingValue": 3,
+    "reviewText": "Review for Cooler Master MWE 550",
+    "timestamps": "2025-07-16T07:15:21.732390"
+  },
+  {
+    "id": "RATING017",
+    "prodID": "PROD017",
+    "userID": "USER017",
+    "ratingValue": 3,
+    "reviewText": "Review for NZXT H510",
+    "timestamps": "2025-07-16T07:15:21.732401"
+  },
+  {
+    "id": "RATING018",
+    "prodID": "PROD018",
+    "userID": "USER018",
+    "ratingValue": 4,
+    "reviewText": "Review for Cooler Master NR600",
+    "timestamps": "2025-07-16T07:15:21.732416"
+  },
+  {
+    "id": "RATING019",
+    "prodID": "PROD019",
+    "userID": "USER019",
+    "ratingValue": 4,
+    "reviewText": "Review for Corsair 4000D",
+    "timestamps": "2025-07-16T07:15:21.732428"
+  },
+  {
+    "id": "RATING020",
+    "prodID": "PROD020",
+    "userID": "USER020",
+    "ratingValue": 5,
+    "reviewText": "Review for Phanteks Eclipse P300A",
+    "timestamps": "2025-07-16T07:15:21.732438"
+  },
+  {
+    "id": "RATING021",
+    "prodID": "PROD021",
+    "userID": "USER021",
+    "ratingValue": 4,
+    "reviewText": "Review for Samsung 980 Pro 1TB",
+    "timestamps": "2025-07-16T07:15:21.732449"
+  },
+  {
+    "id": "RATING022",
+    "prodID": "PROD022",
+    "userID": "USER022",
+    "ratingValue": 5,
+    "reviewText": "Review for WD Blue SN570 500GB",
+    "timestamps": "2025-07-16T07:15:21.732460"
+  },
+  {
+    "id": "RATING023",
+    "prodID": "PROD023",
+    "userID": "USER023",
+    "ratingValue": 4,
+    "reviewText": "Review for Crucial MX500 1TB",
+    "timestamps": "2025-07-16T07:15:21.732477"
+  },
+  {
+    "id": "RATING024",
+    "prodID": "PROD024",
+    "userID": "USER024",
+    "ratingValue": 5,
+    "reviewText": "Review for Seagate Barracuda 2TB",
+    "timestamps": "2025-07-16T07:15:21.732497"
+  },
+  {
+    "id": "RATING025",
+    "prodID": "PROD025",
+    "userID": "USER025",
+    "ratingValue": 4,
+    "reviewText": "Review for Cooler Master Hyper 212",
+    "timestamps": "2025-07-16T07:15:21.732508"
+  },
+  {
+    "id": "RATING026",
+    "prodID": "PROD026",
+    "userID": "USER026",
+    "ratingValue": 5,
+    "reviewText": "Review for NZXT Kraken X63",
+    "timestamps": "2025-07-16T07:15:21.732520"
+  },
+  {
+    "id": "RATING027",
+    "prodID": "PROD027",
+    "userID": "USER027",
+    "ratingValue": 4,
+    "reviewText": "Review for Noctua NH-D15",
+    "timestamps": "2025-07-16T07:15:21.732531"
+  },
+  {
+    "id": "RATING028",
+    "prodID": "PROD028",
+    "userID": "USER028",
+    "ratingValue": 5,
+    "reviewText": "Excellent AIO cooler with great RGB lighting. Keeps my CPU cool even under heavy loads. Easy installation and quiet operation.",
+    "timestamps": "2025-07-16T07:15:21.732541"
+  },
+  {
+    "id": "RATING029",
+    "prodID": "PROD029",
+    "userID": "USER029",
+    "ratingValue": 4,
+    "reviewText": "Powerful high-end GPU that handles 4K gaming with ease. Excellent ray tracing performance but runs hot and consumes a lot of power. Make sure you have adequate cooling.",
+    "timestamps": "2025-07-16T08:20:15.123456"
+  },
+  {
+    "id": "RATING030",
+    "prodID": "PROD030",
+    "userID": "USER030",
+    "ratingValue": 5,
+    "reviewText": "Outstanding value for 1440p and 4K gaming. Great alternative to NVIDIA with competitive performance and more VRAM. Highly recommended for high-resolution gaming.",
+    "timestamps": "2025-07-16T09:30:22.654321"
+  },
+  {
+    "id": "RATING031",
+    "prodID": "PROD031",
+    "userID": "USER031",
+    "ratingValue": 4,
+    "reviewText": "Solid 1440p gaming card with good ray tracing capabilities. Still relevant for modern games at high settings. Great price-to-performance ratio.",
+    "timestamps": "2025-07-16T10:45:33.789012"
+  },
+  {
+    "id": "RATING032",
+    "prodID": "PROD032",
+    "userID": "USER032",
+    "ratingValue": 4,
+    "reviewText": "Excellent budget gaming card for 1080p. No ray tracing but handles all games at high settings smoothly. Perfect for entry-level gaming builds.",
+    "timestamps": "2025-07-16T11:15:44.234567"
+  },
+  {
+    "id": "RATING033",
+    "prodID": "PROD033",
+    "userID": "USER033",
+    "ratingValue": 5,
+    "reviewText": "High-quality PSU with plenty of headroom for high-end builds. Fully modular design and excellent efficiency. Silent operation even under load.",
+    "timestamps": "2025-07-16T12:25:55.345678"
+  },
+  {
+    "id": "RATING034",
+    "prodID": "PROD034",
+    "userID": "USER034",
+    "ratingValue": 5,
+    "reviewText": "Premium PSU for enthusiast builds. Platinum efficiency and rock-solid reliability. Perfect for dual-GPU setups and overclocking. Worth the investment.",
+    "timestamps": "2025-07-16T13:35:11.456789"
+  },
+  {
+    "id": "RATING035",
+    "prodID": "PROD035",
+    "userID": "USER035",
+    "ratingValue": 3,
+    "reviewText": "Basic PSU for very budget builds. Gets the job done but limited connectivity and efficiency. Only suitable for low-power systems.",
+    "timestamps": "2025-07-16T14:45:22.567890"
+  },
+  {
+    "id": "RATING036",
+    "prodID": "PROD036",
+    "userID": "USER036",
+    "ratingValue": 5,
+    "reviewText": "Excellent AM5 motherboard with cutting-edge features. Great VRM design, plenty of connectivity, and future-proof. Perfect for Ryzen 7000 series CPUs.",
+    "timestamps": "2025-07-16T15:55:33.678901"
+  },
+  {
+    "id": "RATING037",
+    "prodID": "PROD037",
+    "userID": "USER037",
+    "ratingValue": 4,
+    "reviewText": "Great Mini-ITX board for compact builds. Good feature set despite the small size. WiFi works well and build quality is solid. Perfect for SFF builds.",
+    "timestamps": "2025-07-16T16:05:44.789012"
+  }
+]

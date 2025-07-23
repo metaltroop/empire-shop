@@ -1,3 +1,4 @@
+// empire-client/components/PopularCategories.tsx
 'use client'
 import { lazy } from 'react'
 

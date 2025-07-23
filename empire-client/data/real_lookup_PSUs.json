@@ -1,0 +1,58 @@
+[
+  {
+    "prodID": "PROD013",
+    "wattage": 750,
+    "efficiencyRating": "80+ Gold",
+    "modularity": "Fully Modular",
+    "formFactor": "ATX",
+    "pciConnectors": 4
+  },
+  {
+    "prodID": "PROD014",
+    "wattage": 600,
+    "efficiencyRating": "80+ Bronze",
+    "modularity": "Non-Modular",
+    "formFactor": "ATX",
+    "pciConnectors": 2
+  },
+  {
+    "prodID": "PROD015",
+    "wattage": 650,
+    "efficiencyRating": "80+ Gold",
+    "modularity": "Fully Modular",
+    "formFactor": "ATX",
+    "pciConnectors": 3
+  },
+  {
+    "prodID": "PROD016",
+    "wattage": 550,
+    "efficiencyRating": "80+ Bronze",
+    "modularity": "Semi-Modular",
+    "formFactor": "ATX",
+    "pciConnectors": 2
+  },
+  {
+    "prodID": "PROD033",
+    "wattage": 850,
+    "efficiencyRating": "80+ Gold",
+    "modularity": "Fully Modular",
+    "formFactor": "ATX",
+    "pciConnectors": 6
+  },
+  {
+    "prodID": "PROD034",
+    "wattage": 1000,
+    "efficiencyRating": "80+ Platinum",
+    "modularity": "Fully Modular",
+    "formFactor": "ATX",
+    "pciConnectors": 8
+  },
+  {
+    "prodID": "PROD035",
+    "wattage": 450,
+    "efficiencyRating": "80+ Bronze",
+    "modularity": "Non-Modular",
+    "formFactor": "ATX",
+    "pciConnectors": 1
+  }
+]

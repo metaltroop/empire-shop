@@ -1,0 +1,42 @@
+[
+  {
+    "prodID": "PROD021",
+    "storageType": "SSD",
+    "capacityGB": 1000,
+    "interface": "NVMe",
+    "formFactor": "M.2",
+    "readSpeed": 7000,
+    "writeSpeed": 5000,
+    "tbw": 600
+  },
+  {
+    "prodID": "PROD022",
+    "storageType": "SSD",
+    "capacityGB": 500,
+    "interface": "NVMe",
+    "formFactor": "M.2",
+    "readSpeed": 3500,
+    "writeSpeed": 3000,
+    "tbw": 300
+  },
+  {
+    "prodID": "PROD023",
+    "storageType": "SSD",
+    "capacityGB": 1000,
+    "interface": "SATA",
+    "formFactor": "2.5\"",
+    "readSpeed": 560,
+    "writeSpeed": 510,
+    "tbw": 360
+  },
+  {
+    "prodID": "PROD024",
+    "storageType": "HDD",
+    "capacityGB": 2000,
+    "interface": "SATA",
+    "formFactor": "3.5\"",
+    "readSpeed": 220,
+    "writeSpeed": 210,
+    "tbw": 180
+  }
+]

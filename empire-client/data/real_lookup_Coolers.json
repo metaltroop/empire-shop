@@ -1,0 +1,42 @@
+[
+  {
+    "prodID": "PROD025",
+    "coolerType": "Air",
+    "SupportedSocket": "LGA1700/AM4",
+    "fanSizeMm": 120,
+    "radiatorSizeMm": 0,
+    "maxTdpSupported": 150,
+    "hasRGB": true,
+    "noiseLevelDB": 26
+  },
+  {
+    "prodID": "PROD026",
+    "coolerType": "AIO",
+    "SupportedSocket": "LGA1700/AM4",
+    "fanSizeMm": 140,
+    "radiatorSizeMm": 280,
+    "maxTdpSupported": 250,
+    "hasRGB": true,
+    "noiseLevelDB": 21
+  },
+  {
+    "prodID": "PROD027",
+    "coolerType": "Air",
+    "SupportedSocket": "LGA1700/AM4",
+    "fanSizeMm": 140,
+    "radiatorSizeMm": 0,
+    "maxTdpSupported": 220,
+    "hasRGB": false,
+    "noiseLevelDB": 19
+  },
+  {
+    "prodID": "PROD028",
+    "coolerType": "AIO",
+    "SupportedSocket": "LGA1700/AM4",
+    "fanSizeMm": 120,
+    "radiatorSizeMm": 240,
+    "maxTdpSupported": 200,
+    "hasRGB": true,
+    "noiseLevelDB": 25
+  }
+]

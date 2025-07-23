@@ -1,3 +1,4 @@
+// empire-client/app/Searchpg/page.tsx
 'use client'
 
 import { Search, ArrowRight } from 'lucide-react'

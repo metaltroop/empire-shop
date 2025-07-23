@@ -1,3 +1,4 @@
+// empire-client/app/page.tsx
 'use client'
 import { ShoppingCart } from 'lucide-react'
 import { lazy, useEffect, useState } from 'react'

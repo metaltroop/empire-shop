@@ -1,0 +1,90 @@
+[
+  {
+    "prodID": "PROD005",
+    "chipset": "RTX 3060 Ti",
+    "vramGb": 8,
+    "tdp": 200,
+    "pcieVersion": "4.0",
+    "length_mm": 242,
+    "powerConnector": "1x 8-pin",
+    "hasRayTracing": true,
+    "coolingType": "Dual Fan"
+  },
+  {
+    "prodID": "PROD006",
+    "chipset": "RX 6700 XT",
+    "vramGb": 12,
+    "tdp": 230,
+    "pcieVersion": "4.0",
+    "length_mm": 267,
+    "powerConnector": "2x 8-pin",
+    "hasRayTracing": true,
+    "coolingType": "Triple Fan"
+  },
+  {
+    "prodID": "PROD007",
+    "chipset": "RTX 4070",
+    "vramGb": 12,
+    "tdp": 200,
+    "pcieVersion": "4.0",
+    "length_mm": 242,
+    "powerConnector": "1x 8-pin",
+    "hasRayTracing": true,
+    "coolingType": "Dual Fan"
+  },
+  {
+    "prodID": "PROD008",
+    "chipset": "RX 7600",
+    "vramGb": 8,
+    "tdp": 165,
+    "pcieVersion": "4.0",
+    "length_mm": 204,
+    "powerConnector": "1x 8-pin",
+    "hasRayTracing": true,
+    "coolingType": "Dual Fan"
+  },
+  {
+    "prodID": "PROD029",
+    "chipset": "RTX 4080",
+    "vramGb": 16,
+    "tdp": 320,
+    "pcieVersion": "4.0",
+    "length_mm": 304,
+    "powerConnector": "3x 8-pin",
+    "hasRayTracing": true,
+    "coolingType": "Triple Fan"
+  },
+  {
+    "prodID": "PROD030",
+    "chipset": "RX 7800 XT",
+    "vramGb": 16,
+    "tdp": 263,
+    "pcieVersion": "4.0",
+    "length_mm": 287,
+    "powerConnector": "2x 8-pin",
+    "hasRayTracing": true,
+    "coolingType": "Triple Fan"
+  },
+  {
+    "prodID": "PROD031",
+    "chipset": "RTX 3070",
+    "vramGb": 8,
+    "tdp": 220,
+    "pcieVersion": "4.0",
+    "length_mm": 242,
+    "powerConnector": "2x 8-pin",
+    "hasRayTracing": true,
+    "coolingType": "Dual Fan"
+  },
+  {
+    "prodID": "PROD032",
+    "chipset": "GTX 1660 Super",
+    "vramGb": 6,
+    "tdp": 125,
+    "pcieVersion": "3.0",
+    "length_mm": 180,
+    "powerConnector": "1x 8-pin",
+    "hasRayTracing": false,
+    "coolingType": "Dual Fan"
+  }
+]

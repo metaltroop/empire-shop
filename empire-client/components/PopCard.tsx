@@ -1,3 +1,4 @@
+// empire-client/components/PopCard.tsx
 'use client'
 import { Suspense } from 'react'
 import Image from 'next/image'

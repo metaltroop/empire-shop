@@ -1,0 +1,50 @@
+[
+  {
+    "prodID": "PROD001",
+    "socketType": "LGA1700",
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 2.5,
+    "boostClock": 4.4,
+    "tdp": 65,
+    "hasIGPU": true,
+    "cache": "18MB",
+    "generation": "12th Gen"
+  },
+  {
+    "prodID": "PROD002",
+    "socketType": "AM4",
+    "cores": 6,
+    "threads": 12,
+    "baseClock": 3.7,
+    "boostClock": 4.6,
+    "tdp": 65,
+    "hasIGPU": false,
+    "cache": "32MB",
+    "generation": "Zen 3"
+  },
+  {
+    "prodID": "PROD003",
+    "socketType": "LGA1700",
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.4,
+    "boostClock": 5.4,
+    "tdp": 125,
+    "hasIGPU": true,
+    "cache": "30MB",
+    "generation": "13th Gen"
+  },
+  {
+    "prodID": "PROD004",
+    "socketType": "AM4",
+    "cores": 8,
+    "threads": 16,
+    "baseClock": 3.4,
+    "boostClock": 4.5,
+    "tdp": 105,
+    "hasIGPU": false,
+    "cache": "96MB",
+    "generation": "Zen 3"
+  }
+]

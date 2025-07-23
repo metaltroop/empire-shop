@@ -1,3 +1,4 @@
+// empire-client/components/ServiceCard.tsx
 import Image from 'next/image'
 import Link from 'next/link'
 

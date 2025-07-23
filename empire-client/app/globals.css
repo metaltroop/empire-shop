@@ -4,3 +4,121 @@
   background-color: #ffffff; /* Tailwind bg-gray-50 */
   color: #111827; /* Tailwind text-gray-900 */
 }
+
+/* Animations for product grid */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
+
+/* Wiggle animation for AddToCartButton */
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+/* Custom slider styles for price range */
+.slider-thumb::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #2563eb;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider-thumb::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #2563eb;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+/* PC Builder animations */
+@keyframes pulse-once {
+  0% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
+}
+
+.animate-pulse-once {
+  animation: pulse-once 1s forwards;
+}
+
+@keyframes scale-in {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.3s forwards;
+}
+
+/* Staggered animation for product grid */
+.product-grid > div {
+  opacity: 0;
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.product-grid > div:nth-child(1) { animation-delay: 0.1s; }
+.product-grid > div:nth-child(2) { animation-delay: 0.2s; }
+.product-grid > div:nth-child(3) { animation-delay: 0.3s; }
+.product-grid > div:nth-child(4) { animation-delay: 0.4s; }
+.product-grid > div:nth-child(5) { animation-delay: 0.5s; }
+.product-grid > div:nth-child(6) { animation-delay: 0.6s; }
+
+/* Loading animation */
+@keyframes loading-pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+.animate-loading-pulse {
+  animation: loading-pulse 1.5s infinite;
+}
+
+/* Slide up animation for bottom drawer */
+@keyframes slide-up {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out forwards;
+}
+
+/* Transition utilities */
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}

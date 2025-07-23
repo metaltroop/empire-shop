@@ -1,0 +1,557 @@
+[
+  {
+    "prodID": "PROD001",
+    "prodName": "Intel Core i5-12400F",
+    "price": 31734,
+    "categoryID": "CAT001",
+    "smimageurl": "inteli5",
+    "bigimageurl": [
+      "inteli5",
+      "inteli5",
+      "inteli5"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732030",
+    "averageRating": 4.2,
+    "totalratingsRecieved": 50
+  },
+  {
+    "prodID": "PROD002",
+    "prodName": "AMD Ryzen 5 5600X",
+    "price": 35817,
+    "categoryID": "CAT001",
+    "smimageurl": "AMD_R9",
+    "bigimageurl": [
+      "AMD_R9",
+      "AMD_R9",
+      "AMD_R9"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732066",
+    "averageRating": 3.6,
+    "totalratingsRecieved": 33
+  },
+  {
+    "prodID": "PROD003",
+    "prodName": "Intel Core i7-13700K",
+    "price": 35025,
+    "categoryID": "CAT001",
+    "smimageurl": "inteli5",
+    "bigimageurl": [
+      "inteli5",
+      "inteli5",
+      "inteli5"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732081",
+    "averageRating": 4.3,
+    "totalratingsRecieved": 25
+  },
+  {
+    "prodID": "PROD004",
+    "prodName": "AMD Ryzen 7 5800X3D",
+    "price": 36068,
+    "categoryID": "CAT001",
+    "smimageurl": "AMD_R9",
+    "bigimageurl": [
+      "AMD_R9",
+      "AMD_R9",
+      "AMD_R9"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732107",
+    "averageRating": 3.9,
+    "totalratingsRecieved": 98
+  },
+  {
+    "prodID": "PROD005",
+    "prodName": "NVIDIA RTX 3060 Ti",
+    "price": 29382,
+    "categoryID": "CAT002",
+    "smimageurl": "rtx_3060ti",
+    "bigimageurl": [
+      "rtx_3060ti",
+      "rtx_3060ti",
+      "rtx_3060ti"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732136",
+    "averageRating": 3.7,
+    "totalratingsRecieved": 90
+  },
+  {
+    "prodID": "PROD006",
+    "prodName": "AMD Radeon RX 6700 XT",
+    "price": 37866,
+    "categoryID": "CAT002",
+    "smimageurl": "rx6700",
+    "bigimageurl": [
+      "rx6700",
+      "rx6700",
+      "rx6700"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732173",
+    "averageRating": 4.0,
+    "totalratingsRecieved": 84
+  },
+  {
+    "prodID": "PROD007",
+    "prodName": "NVIDIA RTX 4070",
+    "price": 10285,
+    "categoryID": "CAT002",
+    "smimageurl": "rtx_3060ti",
+    "bigimageurl": [
+      "rtx_3060ti",
+      "rtx_3060ti",
+      "rtx_3060ti"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732198",
+    "averageRating": 4.0,
+    "totalratingsRecieved": 74
+  },
+  {
+    "prodID": "PROD008",
+    "prodName": "AMD Radeon RX 7600",
+    "price": 39252,
+    "categoryID": "CAT002",
+    "smimageurl": "rx6700",
+    "bigimageurl": [
+      "rx6700",
+      "rx6700",
+      "rx6700"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732220",
+    "averageRating": 4.6,
+    "totalratingsRecieved": 18
+  },
+  {
+    "prodID": "PROD009",
+    "prodName": "ASUS ROG STRIX B550-F",
+    "price": 5218,
+    "categoryID": "CAT003",
+    "smimageurl": "aorusMB",
+    "bigimageurl": [
+      "aorusMB",
+      "aorusMB",
+      "aorusMB"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732242",
+    "averageRating": 3.9,
+    "totalratingsRecieved": 46
+  },
+  {
+    "prodID": "PROD010",
+    "prodName": "MSI MAG B660M",
+    "price": 21920,
+    "categoryID": "CAT003",
+    "smimageurl": "aorusMB",
+    "bigimageurl": [
+      "aorusMB",
+      "aorusMB",
+      "aorusMB"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732266",
+    "averageRating": 3.6,
+    "totalratingsRecieved": 36
+  },
+  {
+    "prodID": "PROD011",
+    "prodName": "Gigabyte Z790 AORUS Elite",
+    "price": 19280,
+    "categoryID": "CAT003",
+    "smimageurl": "aorusMB",
+    "bigimageurl": [
+      "aorusMB",
+      "aorusMB",
+      "aorusMB"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732285",
+    "averageRating": 4.7,
+    "totalratingsRecieved": 25
+  },
+  {
+    "prodID": "PROD012",
+    "prodName": "ASRock B450M Steel Legend",
+    "price": 4192,
+    "categoryID": "CAT003",
+    "smimageurl": "aorusMB",
+    "bigimageurl": [
+      "aorusMB",
+      "aorusMB",
+      "aorusMB"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732327",
+    "averageRating": 4.4,
+    "totalratingsRecieved": 53
+  },
+  {
+    "prodID": "PROD013",
+    "prodName": "Corsair RM750x",
+    "price": 32944,
+    "categoryID": "CAT004",
+    "smimageurl": "RM750x",
+    "bigimageurl": [
+      "RM750x",
+      "RM750x",
+      "RM750x"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732347",
+    "averageRating": 4.7,
+    "totalratingsRecieved": 19
+  },
+  {
+    "prodID": "PROD014",
+    "prodName": "EVGA 600 BR",
+    "price": 29420,
+    "categoryID": "CAT004",
+    "smimageurl": "RM750x",
+    "bigimageurl": [
+      "RM750x",
+      "RM750x",
+      "RM750x"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732360",
+    "averageRating": 4.6,
+    "totalratingsRecieved": 56
+  },
+  {
+    "prodID": "PROD015",
+    "prodName": "Seasonic FOCUS GX-650",
+    "price": 38906,
+    "categoryID": "CAT004",
+    "smimageurl": "RM750x",
+    "bigimageurl": [
+      "RM750x",
+      "RM750x",
+      "RM750x"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732375",
+    "averageRating": 4.3,
+    "totalratingsRecieved": 45
+  },
+  {
+    "prodID": "PROD016",
+    "prodName": "Cooler Master MWE 550",
+    "price": 31575,
+    "categoryID": "CAT004",
+    "smimageurl": "CMMWE550",
+    "bigimageurl": [
+      "CMMWE550",
+      "CMMWE550",
+      "CMMWE550"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732385",
+    "averageRating": 4.6,
+    "totalratingsRecieved": 79
+  },
+  {
+    "prodID": "PROD017",
+    "prodName": "NZXT H510",
+    "price": 38816,
+    "categoryID": "CAT005",
+    "smimageurl": "nzxtcase",
+    "bigimageurl": [
+      "nzxtcase",
+      "nzxtcase",
+      "nzxtcase"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732396",
+    "averageRating": 4.9,
+    "totalratingsRecieved": 49
+  },
+  {
+    "prodID": "PROD018",
+    "prodName": "Cooler Master NR600",
+    "price": 8619,
+    "categoryID": "CAT005",
+    "smimageurl": "nzxtcase",
+    "bigimageurl": [
+      "nzxtcase",
+      "nzxtcase",
+      "nzxtcase"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732408",
+    "averageRating": 3.7,
+    "totalratingsRecieved": 40
+  },
+  {
+    "prodID": "PROD019",
+    "prodName": "Corsair 4000D",
+    "price": 29822,
+    "categoryID": "CAT005",
+    "smimageurl": "nzxtcase",
+    "bigimageurl": [
+      "nzxtcase",
+      "nzxtcase",
+      "nzxtcase"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732423",
+    "averageRating": 3.7,
+    "totalratingsRecieved": 38
+  },
+  {
+    "prodID": "PROD020",
+    "prodName": "Phanteks Eclipse P300A",
+    "price": 10831,
+    "categoryID": "CAT005",
+    "smimageurl": "nzxtcase",
+    "bigimageurl": [
+      "nzxtcase",
+      "nzxtcase",
+      "nzxtcase"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732433",
+    "averageRating": 4.9,
+    "totalratingsRecieved": 75
+  },
+  {
+    "prodID": "PROD021",
+    "prodName": "Samsung 980 Pro 1TB",
+    "price": 21499,
+    "categoryID": "CAT007",
+    "smimageurl": "SSD",
+    "bigimageurl": [
+      "SSD",
+      "SSD",
+      "SSD"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732445",
+    "averageRating": 4.3,
+    "totalratingsRecieved": 64
+  },
+  {
+    "prodID": "PROD022",
+    "prodName": "WD Blue SN570 500GB",
+    "price": 9636,
+    "categoryID": "CAT007",
+    "smimageurl": "SSD",
+    "bigimageurl": [
+      "SSD",
+      "SSD",
+      "SSD"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732455",
+    "averageRating": 4.6,
+    "totalratingsRecieved": 15
+  },
+  {
+    "prodID": "PROD023",
+    "prodName": "Crucial MX500 1TB",
+    "price": 30480,
+    "categoryID": "CAT007",
+    "smimageurl": "SSD",
+    "bigimageurl": [
+      "SSD",
+      "SSD",
+      "SSD"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732470",
+    "averageRating": 3.8,
+    "totalratingsRecieved": 48
+  },
+  {
+    "prodID": "PROD024",
+    "prodName": "Seagate Barracuda 2TB",
+    "price": 26101,
+    "categoryID": "CAT007",
+    "smimageurl": "SSD",
+    "bigimageurl": [
+      "SSD",
+      "SSD",
+      "SSD"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732492",
+    "averageRating": 3.6,
+    "totalratingsRecieved": 59
+  },
+  {
+    "prodID": "PROD025",
+    "prodName": "Cooler Master Hyper 212",
+    "price": 26126,
+    "categoryID": "CAT006",
+    "smimageurl": "aircooler",
+    "bigimageurl": [
+      "aircooler",
+      "aircooler",
+      "aircooler"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732503",
+    "averageRating": 3.6,
+    "totalratingsRecieved": 60
+  },
+  {
+    "prodID": "PROD026",
+    "prodName": "NZXT Kraken X63",
+    "price": 18523,
+    "categoryID": "CAT006",
+    "smimageurl": "aircooler",
+    "bigimageurl": [
+      "aircooler",
+      "aircooler",
+      "aircooler"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732515",
+    "averageRating": 4.6,
+    "totalratingsRecieved": 21
+  },
+  {
+    "prodID": "PROD027",
+    "prodName": "Noctua NH-D15",
+    "price": 33168,
+    "categoryID": "CAT006",
+    "smimageurl": "aircooler",
+    "bigimageurl": [
+      "aircooler",
+      "aircooler",
+      "aircooler"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732526",
+    "averageRating": 3.9,
+    "totalratingsRecieved": 89
+  },
+  {
+    "prodID": "PROD028",
+    "prodName": "Corsair H100i RGB",
+    "price": 33449,
+    "categoryID": "CAT006",
+    "smimageurl": "aircooler",
+    "bigimageurl": [
+      "aircooler",
+      "aircooler",
+      "aircooler"
+    ],
+    "timestamps": "2025-07-16T07:15:21.732536",
+    "averageRating": 4.9,
+    "totalratingsRecieved": 26
+  },
+  {
+    "prodID": "PROD029",
+    "prodName": "NVIDIA RTX 4080",
+    "price": 89999,
+    "categoryID": "CAT002",
+    "smimageurl": "GPU",
+    "bigimageurl": [
+      "GPU",
+      "GPU",
+      "GPU"
+    ],
+    "timestamps": "2025-07-16T08:15:21.732537",
+    "averageRating": 4.2,
+    "totalratingsRecieved": 15
+  },
+  {
+    "prodID": "PROD030",
+    "prodName": "AMD Radeon RX 7800 XT",
+    "price": 54999,
+    "categoryID": "CAT002",
+    "smimageurl": "GPU",
+    "bigimageurl": [
+      "GPU",
+      "GPU",
+      "GPU"
+    ],
+    "timestamps": "2025-07-16T08:25:21.732538",
+    "averageRating": 4.5,
+    "totalratingsRecieved": 22
+  },
+  {
+    "prodID": "PROD031",
+    "prodName": "NVIDIA RTX 3070",
+    "price": 42999,
+    "categoryID": "CAT002",
+    "smimageurl": "GPU",
+    "bigimageurl": [
+      "GPU",
+      "GPU",
+      "GPU"
+    ],
+    "timestamps": "2025-07-16T08:35:21.732539",
+    "averageRating": 4.3,
+    "totalratingsRecieved": 18
+  },
+  {
+    "prodID": "PROD032",
+    "prodName": "NVIDIA GTX 1660 Super",
+    "price": 24999,
+    "categoryID": "CAT002",
+    "smimageurl": "GPU",
+    "bigimageurl": [
+      "GPU",
+      "GPU",
+      "GPU"
+    ],
+    "timestamps": "2025-07-16T08:45:21.732540",
+    "averageRating": 4.1,
+    "totalratingsRecieved": 35
+  },
+  {
+    "prodID": "PROD033",
+    "prodName": "Corsair RM850x",
+    "price": 14999,
+    "categoryID": "CAT004",
+    "smimageurl": "psu",
+    "bigimageurl": [
+      "psu",
+      "psu",
+      "psu"
+    ],
+    "timestamps": "2025-07-16T08:55:21.732541",
+    "averageRating": 4.7,
+    "totalratingsRecieved": 28
+  },
+  {
+    "prodID": "PROD034",
+    "prodName": "Seasonic PRIME TX-1000",
+    "price": 24999,
+    "categoryID": "CAT004",
+    "smimageurl": "psu",
+    "bigimageurl": [
+      "psu",
+      "psu",
+      "psu"
+    ],
+    "timestamps": "2025-07-16T09:05:21.732542",
+    "averageRating": 4.8,
+    "totalratingsRecieved": 12
+  },
+  {
+    "prodID": "PROD035",
+    "prodName": "EVGA BR 450W",
+    "price": 4999,
+    "categoryID": "CAT004",
+    "smimageurl": "psu",
+    "bigimageurl": [
+      "psu",
+      "psu",
+      "psu"
+    ],
+    "timestamps": "2025-07-16T09:15:21.732543",
+    "averageRating": 3.2,
+    "totalratingsRecieved": 45
+  },
+  {
+    "prodID": "PROD036",
+    "prodName": "ASUS ROG STRIX X670E-E",
+    "price": 49999,
+    "categoryID": "CAT003",
+    "smimageurl": "motherboard",
+    "bigimageurl": [
+      "motherboard",
+      "motherboard",
+      "motherboard"
+    ],
+    "timestamps": "2025-07-16T09:25:21.732544",
+    "averageRating": 4.6,
+    "totalratingsRecieved": 8
+  },
+  {
+    "prodID": "PROD037",
+    "prodName": "MSI MPG B660I Gaming Edge",
+    "price": 19999,
+    "categoryID": "CAT003",
+    "smimageurl": "motherboard",
+    "bigimageurl": [
+      "motherboard",
+      "motherboard",
+      "motherboard"
+    ],
+    "timestamps": "2025-07-16T09:35:21.732545",
+    "averageRating": 4.1,
+    "totalratingsRecieved": 16
+  }
+]
